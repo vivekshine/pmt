@@ -1,0 +1,26 @@
+<h1>Listing quiz_results</h1>
+
+<table>
+  <tr>
+    <th>Userid</th>
+    <th>Module</th>
+    <th>Quiz</th>
+    <th>Duration</th>
+  </tr>
+
+<% @quiz_results.each do |quiz_result| %>
+  <tr>
+    <td><%=h quiz_result.userid %></td>
+    <td><%=h quiz_result.module %></td>
+    <td><%=h quiz_result.quiz %></td>
+    <td><%=h quiz_result.duration %></td>
+    <td><%= link_to 'Show', quiz_result %></td>
+    <td><%= link_to 'Edit', edit_quiz_result_path(quiz_result) %></td>
+    <td><%= link_to 'Destroy', quiz_result, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New quiz_result', new_quiz_result_path %>

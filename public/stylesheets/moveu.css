@@ -1,0 +1,341 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+	width: 788px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wrapper  #header #logo {
+	height: 132px;
+	float: left;
+	width: 343px;
+}
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#wrapper    #header   #navigation {
+	clear: both;
+	background-image: url(../images/compRuby_04.jpg);
+	padding-left: 15px;
+	height: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	padding-top: 5px;
+}
+#wrapper #bodyArea #left {
+	height: 411px;
+	width: 550px;
+	float: left;
+}
+#wrapper #bodyArea #right {
+	height: 411px;
+	width: 238px;
+	float: right;
+}
+#wrapper #bodyArea #footer {
+	fclear: both;
+	background-image: url(../images/compRuby_06.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+}
+#wrapper #header {
+	height: 157px;
+}
+#wrapper #header #login {
+	width: 445px;
+	background-image: url(../images/compRuby_03.jpg);
+	float: right;
+	height: 132px;
+}
+#wrapper #bodyArea {
+	background-color: #FFFFFF;
+	background-image: url(/images/compRuby_05.jpg);
+	background-repeat: no-repeat;
+}
+#wrapper  #bodyArea  #mainText  {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	height: 170px;
+}
+#wrapper    #bodyArea    #wind    {
+	background-color: #ECECEC;
+	width: 470px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 209px;
+	background-image: url(/images/windbkg.jpg);
+}
+#wrapper #wind #windLeft {
+	height: 209px;
+	width: 30%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+}
+#wrapper  #wind  #windCenter {
+	height: 209px;
+	width: 30%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+}
+#wrapper #wind #windRight {
+	height: 209px;
+	width: 29%;
+	padding-left: 2%;
+	padding-right: 1%;
+
+	float: left;
+}
+#wrapper #bodyAreaExpand {
+	background-color: #FFFFFF;
+	background-image: url(/images/white.jpg);
+	background-repeat: repeat-y;
+}
+#wrapper #bodyAreaExpand #left {
+	min-height: 411px;
+	background-repeat: no-repeat;
+	background-image: url(/images/compRuby_05.jpg);
+}
+#wrapper #bodyAreaExpand #footer {
+	clear: both;
+	background-image: url(/images/compRuby_06.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+}
+#wrapper    #bodyAreaExpand #text     {
+	margin-right: 25px;
+	margin-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.mainexpandstyle {
+	font-size: None;
+	padding-right: 100px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+#wrapper #header #login #buttons {
+	padding-top: 53px;
+	padding-left: 150px;
+}
+/*Link Styles*/
+#wrapper #header #navigation a:link, #wrapper #header #navigation a:active, #wrapper #header #navigation a:visited {
+  color: black;
+  }
+#wrapper #header #navigation a:hover {
+  color: blue;
+  }
+
+
+/* Global styles */
+
+h1 {
+        font:  150% sans-serif;
+        color: #226;
+        border-bottom: 1px dotted #77d;
+		padding-bottom: 15px;
+}
+#store {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+#store #banner {
+    font:  150% sans-serif;
+    color: #226;
+}
+
+#wrapper #wide100{
+	float: left;
+	padding-top: 10px;
+    padding-right: 17px;
+	font-size: 15px;
+}
+
+/* Styles for users/index */
+
+table.user-list {
+	width: 100%;
+}
+
+th {
+	text-align: left;
+}
+
+table.user-list .even {
+  background:   #CFF;
+}
+
+table.user-list .odd {
+  background:   #FFC;
+}
+
+
+
+table {
+        border-collapse: collapse;
+}
+
+table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+
+.list-image {
+  width:        60px;
+  height:       70px;
+}
+
+.list-description {
+  width:        60%;
+}
+
+.list-description dl {
+        margin: 0;
+}
+
+.list-description dt {
+	color:        #244;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+.list-description dd {
+        margin: 0;
+}
+
+.list-actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+/* An entry in the store catalog */
+
+#store  .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+
+#store  .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#store .entry img {
+  width: 75px;
+  float: left;
+}
+
+
+#store .entry h3 {
+ margin-top: 0;
+ margin-bottom: 2px;
+ color: #227;
+}
+
+#store .entry p {
+ margin-top: 0.5em; 
+ margin-bottom: 0.8em; 
+}
+
+#store .entry .price-line {
+ clear: both;
+}
+
+#store .entry .add-to-cart {
+  position: relative;
+}
+
+#store .entry  .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+/* The error box */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #EEFFEE;
+  display: inline;
+}
+
+.fieldWithErrors * {
+  background-color: red;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* error notice alert */
+
+.error {
+  font-size: 15px;
+  list-style: square;
+  color: #red;
+  border: 1px solid red;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+.notice {
+  font-size: 15px;
+  list-style: square;
+  color: #green;
+  border: 1px solid green;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+.alert {
+  font-size: 15px;
+  list-style: square;
+  color: #blue;
+  border: 1px solid blue;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+

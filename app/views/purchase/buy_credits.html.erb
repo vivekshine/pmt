@@ -1,0 +1,21 @@
+<FORM METHOD=POST ACTION= "https://secure.authorize.net/gateway/transact.dll">
+<INPUT TYPE=HIDDEN NAME="x_login" VALUE="8Ty3NvP8z7z">  
+
+<INPUT TYPE=HIDDEN NAME="x_show_form" VALUE="PAYMENT_FORM">  
+<INPUT TYPE=HIDDEN NAME="x_method" VALUE="CC">  
+<INPUT TYPE=HIDDEN NAME="x_amount" VALUE="<%= @amount %>">  
+
+ <%= @str %> 
+<INPUT TYPE=HIDDEN NAME="x_receipt_link_method" VALUE="POST">
+<INPUT TYPE=HIDDEN NAME="x_receipt_link_text" VALUE="Return to PMT Website">
+<INPUT TYPE=HIDDEN NAME="x_receipt_link_URL" VALUE="http://admin.professionalmovertraining.com/admin/index">
+
+<INPUT TYPE=HIDDEN NAME="x_Cust_ID" VALUE="<%= @company.id %>-<%= @company.name %>">
+<INPUT TYPE=HIDDEN NAME="x_Description" VALUE="Professional Mover Training Credits">
+<INPUT TYPE=HIDDEN NAME="x_Invoice_Num" VALUE=" <%= @order.number %>">
+<INPUT TYPE=HIDDEN NAME="x_First_Name" VALUE="<%= @company.adminfirstname %>">
+<INPUT TYPE=HIDDEN NAME="x_Last_Name" VALUE="<%= @company.adminlastname %>">
+<INPUT TYPE=HIDDEN NAME="x_Company" VALUE="<%= @company.name %>">
+<INPUT TYPE=HIDDEN NAME="x_Email" VALUE="<%= @company.email %>">
+<INPUT TYPE=SUBMIT VALUE="Continue to Secure Payment Site">  
+</FORM>

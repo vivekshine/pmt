@@ -1,0 +1,6 @@
+<%= @user.firstname %> <%= @user.lastname %> has <%= pluralize(@user.credits, "credit") %><br>
+
+<br />
+<%= link_to 'New user', new_user_path %>|
+<%= link_to 'Main Menu', :controller => 'admin', :action => 'index'%>|
+<%= link_to 'Log Out', :controller => 'admin', :action => 'logout' %>

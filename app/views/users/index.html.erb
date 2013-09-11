@@ -1,0 +1,28 @@
+<h1>Listing users</h1>
+
+<table class="user-list">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Username</th>
+    <th>Credits</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td><%=h user.firstname %></td>
+    <td><%=h user.lastname %></td>
+    <td><%=h user.username %></td>
+    <td><%=h user.credits %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Assign Credits', :controller => 'users', :action => :assigncredits, :params => {:id => user.id} %></td>
+    <td><%= link_to 'History', :controller => 'users', :action => :history, :params => {:id => user.id} %></td>
+    <td><%= link_to 'Remove', user, :confirm => 'Any credits this user has will be lost. Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div id="wide100"><%= link_to 'New user', new_user_path %></div>
+<div id="wide100"><%= link_to 'Main Menu', :controller => 'admin', :action => 'index'%></div>
+<div id="wide100"><%= link_to 'Log Out', :controller => 'admin', :action => 'logout' %></div>

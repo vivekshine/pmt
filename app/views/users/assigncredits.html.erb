@@ -1,0 +1,12 @@
+<h1>Assign Credits</h1><br>
+
+<%= @user.firstname %> <%= @user.lastname %> has <%= pluralize(@user.credits, "credit") %><br><br>
+You have <%= pluralize(@thiscompany.credits, "credit") %> available.
+<br><br>
+<% form_tag(:controller => 'users', :action => :movecredits, :params => {:id => @user.id, :company => @thiscompany.id}) do %>
+  <%= submit_tag 'Assign 5 Credits' %>
+<% end %>
+<br />
+<div id="wide100"><%= link_to 'New user', new_user_path %></div>
+<div id="wide100"><%= link_to 'Main Menu', :controller => 'admin', :action => 'index'%></div>
+<div id="wide100"><%= link_to 'Log Out', :controller => 'admin', :action => 'logout' %></div>

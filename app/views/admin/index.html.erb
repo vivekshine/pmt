@@ -1,0 +1,42 @@
+<h1>Admin - Main Menu</h1>
+Welcome, <%= @thiscompany.adminfirstname %> <%= @thiscompany.adminlastname %>.<br><br>
+Company "<%=  @thiscompany.name %>" has <%= pluralize(@total_users, "user")%> and <%= pluralize(@thiscompany.credits, "Training Sessions") %>.
+<br>
+Member of Moving Association "<%= @thiscompany.association %>"<br><br>
+
+<table width="98%" border="0">
+  <tr>
+    <td width="32%"><div id="wide100"><%= link_to 'Manage Users', :controller => 'users', :action => 'index'%></div></td>
+    <td width="34%"></td>
+    <td width="34%"><div id="wide100"><%= link_to 'Log Out', :controller => 'admin', :action => 'logout' %></div></td>
+  </tr>
+  <tr>
+    <td>Buy 5 Training Sessions Monthly $25 <BR>
+    <form action='https://www.2checkout.com/checkout/purchase' method='post'>
+	<p>
+	    <input type='hidden' name='sid' value='1723236'>
+	    <input type='hidden' name='quantity' value='1'>
+	    <input type='hidden' name='product_id' value='6'>
+	    <input name='submit' type='submit' value='Buy from 2CO' >
+	</p>
+</form></td>
+    <td>Buy 20 Training Sessions Monthly $50 <BR><form action='https://www.2checkout.com/checkout/purchase' method='post'>
+	<p>
+	    <input type='hidden' name='sid' value='1723236'>
+	    <input type='hidden' name='quantity' value='1'>
+	    <input type='hidden' name='product_id' value='7'>
+	    <input name='submit' type='submit' value='Buy from 2CO' >
+	</p>
+</form></td>
+    <td>Buy 60 Training Sessions Monthly $75 <BR><form action='https://www.2checkout.com/checkout/purchase' method='post'>
+	<p>
+	    <input type='hidden' name='sid' value='1723236'>
+	    <input type='hidden' name='quantity' value='1'>
+	    <input type='hidden' name='product_id' value='8'>
+	    <input name='submit' type='submit' value='Buy from 2CO' >
+	</p>
+</form></td>
+  </tr>
+</table>
+
+

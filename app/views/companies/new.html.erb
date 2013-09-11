@@ -1,0 +1,49 @@
+<h1><br></h1>
+<h2>Membership fee is $375 (includes 20 training sessions)</h2>
+
+<br/><br/>
+<% form_for(@company) do |f| %>
+  <%= f.error_messages %>
+   <p>
+    <%= f.label 'If you have a coupon code please enter it here:' %> <A HREF="javascript:popUp('http://www.professionalmovertraining.com/coupon.html')">How can I get a coupon?</A><br />
+    <%= f.text_field :coupon %>
+  </p>
+  <p>
+    <%= f.label 'Moving Association Membership#' %><br />
+    <%= f.text_field :association %>
+  </p>
+  <p>
+
+  <p>
+    <%= f.label 'Company' %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Firstname" %><br />
+    <%= f.text_field :adminfirstname %>
+  </p>
+  <p>
+    <%= f.label "Lastname" %><br />
+    <%= f.text_field :adminlastname %>
+  </p>
+  <p>
+    <%= f.label "Email (this will also be the Admin Login)" %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.label 'Repeat password' %><br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p></p>
+  <p>I have read and agree with the<A HREF="javascript:popUp('http://www.professionalmovertraining.com/terms/terms.html')">Terms of Use</A>.</p>
+  <p>
+    <%= f.submit 'I Agree' %>
+  </p>
+<% end %>
+<br>
+<%= link_to 'Let me think about this - Cancel.', :back %>
+

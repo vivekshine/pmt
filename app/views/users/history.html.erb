@@ -1,0 +1,29 @@
+<div class="moveu-form">
+<p>
+  <b>Name: <%=h @user.firstname %> <%=h @user.lastname %>, Credits: <%=h @user.credits %></b>
+</p>
+
+<br/>
+<p>
+Test Results:<br/>
+<table class="user-list">
+  <tr>
+    <th>Date</th><th>Time</th>
+    <th>Module</th>
+    <th>Duration</th>
+    <th>Score</th>
+  </tr>
+
+<% @quiz_results.each do |result| %>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td><%=h result.created_at.strftime("%m/%d/%Y") %></td>
+    <td><%=h result.created_at.strftime("%I:%M%p ") %></td>
+	
+    <td><%=h result.module %></td>
+    <td><%=h result.runtime/60 %> min</td>
+    <td><%=h result.score %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<%= link_to 'Back', users_path %>

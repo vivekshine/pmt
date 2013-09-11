@@ -1,0 +1,26 @@
+# Tell git to ignore some files
+
+### EXAMPLE ###
+# Lines starting with '#' are considered comments.
+# Ignore any file named foo.txt.
+foo.txt
+# Ignore (generated) html files,
+*.html
+# except foo.html which is maintained by hand.
+!foo.html
+# Ignore objects and archives.
+*.[oa]
+
+### FOR RAILS PROJECTS ###
+# ignore database binaries
+*.sqlite3
+
+# ignore log files
+log/*
+*.log
+
+# temporary files
+tmp/*
+
+# flash files
+*.swf

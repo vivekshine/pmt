@@ -1,0 +1,41 @@
+<h1>Editing company</h1>
+
+<% form_for(@company) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+ <p>
+    <%= f.label :association %><br />
+    <%= f.text_field :association %>
+  </p>
+
+  <p>
+    <%= f.label :Lastname %><br />
+    <%= f.text_field :adminlastname %>
+  </p>
+  <p>
+    <%= f.label :Firstname %><br />
+    <%= f.text_field :adminfirstname %>
+  </p>
+  <p>
+    <%= f.label :adminlogin %><br />
+    <%= f.text_field :adminlogin %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @company %> |
+<%= link_to 'Back', companies_path %>

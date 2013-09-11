@@ -1,0 +1,11 @@
+<FORM METHOD=POST ACTION= "/purchase/new"> 
+  <lable> Select your plan </lable>
+  <select name="subscription_plan_id">
+    <% TWOCHECKOUT_PRODUCTS['monthly'].each  do | k, v|  %>
+      <option value="<%= v %>"><%= k%> Monthly</option>
+    <% end %>
+  </select> 
+  <input type="hidden" name="company_id" value="<%= @company.id %>" />
+    <input type="submit" class="submit" name="purchase" value="Continue" />
+</FORM>
+

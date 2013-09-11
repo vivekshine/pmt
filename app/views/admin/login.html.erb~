@@ -1,0 +1,23 @@
+<div class="moveu-form">
+ <% form_tag do %>
+	<fieldset>
+	<legend>Please log in</legend>
+	 <div>
+	  <label for="adminlogin">Username:</label>
+	  <%= text_field_tag :adminlogin, params[:adminlogin] %>
+	 </div>
+
+         <div>
+          <label for="password">Password:</label>
+          <%= password_field_tag :password, params[:password] %>
+         </div>
+
+
+	 <div>
+	  <%= submit_tag "Login" %>
+	 </div>
+	</fieldset>
+ <% end %>
+</div>
+<br><%= link_to 'Sign Up', :controller => 'companies', :action => 'new' %>
+<br><%= link_to 'Forgot Password?', :controller => 'companies', :action => 'forgot' %>

@@ -1,0 +1,23 @@
+<p>
+  <b>Userid:</b>
+  <%=h @quiz_result.userid %>
+</p>
+
+<p>
+  <b>Module:</b>
+  <%=h @quiz_result.module %>
+</p>
+
+<p>
+  <b>Quiz:</b>
+  <%=h @quiz_result.quiz %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%=h @quiz_result.duration %>
+</p>
+
+
+<%= link_to 'Edit', edit_quiz_result_path(@quiz_result) %> |
+<%= link_to 'Back', quiz_results_path %>

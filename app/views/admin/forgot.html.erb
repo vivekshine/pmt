@@ -1,0 +1,16 @@
+<div class="moveu-form">
+ <% form_tag do %>
+	<fieldset>
+	<legend>Password Reminder</legend>
+	 <div>
+	  <label for="email">Email Address:</label>
+	  <%= text_field_tag :email, params[:email] %>
+	 </div>
+
+	 <div>
+	  <%= submit_tag "Send Password" %>
+	 </div>
+	</fieldset>
+ <% end %>
+</div>
+

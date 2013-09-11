@@ -1,0 +1,31 @@
+class FeedbackMailer < ActionMailer::Base
+  
+
+#   def confirm(sent_at = Time.now)
+#     subject    'Feedback from PMT Website - Feature Request'
+#     recipients 'thomask@aesbus.com'
+#     from	@params[:email]
+#   end
+
+  def contact(recipient, subject, message, from, sent_at = Time.now)
+    @subject = subject
+    @recipients = recipient
+    @from = from
+    @sent_on = sent_at
+    @body["title"] = subject
+    @body["email"] = from
+    @body["message"] = message
+    @headers = {}
+   end
+
+  def password_reminder(recipient, subject, message, from, sent_at = Time.now)
+    @subject = subject
+    @recipients = recipient
+    @from = from
+    @sent_on = sent_at
+    @body["title"] = "Password Reminder"
+    @body["email"] = "admin@professionalmovertraining.com"
+    @body["message"] = message
+    @headers = {}
+  end
+end
