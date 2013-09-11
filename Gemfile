@@ -5,6 +5,8 @@ gem "activemerchant","1.4.1"
 # gem 'nokogiri', '1.4.2'
 # gem 'geokit'
 
+gem 'rake', '0.8.7'
+
 group :development do
   # bundler requires these gems in development
   # gem 'rails-footnotes'
