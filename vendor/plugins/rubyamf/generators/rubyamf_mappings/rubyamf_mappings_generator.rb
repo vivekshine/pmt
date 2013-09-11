@@ -1,4 +1,4 @@
-require 'rbconfig'
+require 'config'
 
 class RubyamfMappingsGenerator < Rails::Generator::Base
   
