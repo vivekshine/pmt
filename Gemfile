@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 ruby "1.8.7"
 gem 'rails', '~> 2.3.4'
 gem "activemerchant","1.4.1"
+gem 'pg'
 # bundler requires these gems in all environments
 # gem 'nokogiri', '1.4.2'
 # gem 'geokit'

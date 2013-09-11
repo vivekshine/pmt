@@ -15,6 +15,7 @@ GEM
       activesupport (= 2.3.18)
     activesupport (2.3.18)
     builder (3.2.2)
+    pg (0.16.0)
     rack (1.1.6)
     rails (2.3.18)
       actionmailer (= 2.3.18)
@@ -30,5 +31,6 @@ PLATFORMS
 
 DEPENDENCIES
   activemerchant (= 1.4.1)
+  pg
   rails (~> 2.3.4)
   rake (= 0.8.7)
